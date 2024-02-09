@@ -20,8 +20,8 @@ class Student extends Person {
 		}
 	}
 	study(){
-		let x= Student.name
-		console.log(`${x} is studying`);
+		console.log(`${this.name} is studying`);
+		return 
 	}
 }
 
@@ -33,7 +33,8 @@ constructor(name){
 		}
 	}
 	teach(){
-		console.log(`${name} is teaching`);
+		console.log(`${this.name} is teaching`);
+		return
 	}
 
 	
