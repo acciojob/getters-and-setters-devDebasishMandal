@@ -1,25 +1,27 @@
+//complete this code
 class Person {
-	 // name,age;
-	constructor(name){
+
+	constructor(name,age){
 		this.name=name;
-		// this.age=age;
+		this.age=age;
 	}
-	get name(){
+	getName(){
 			return this.name;
 		}
-		set Age(age){
+		setAge(age){
 		 this.age=age;
 
 		}
 }
 
 class Student extends Person {
-	
 	constructor(name){
-		super(name);
+		super(name){
+		// this.name=name
+		}
 	}
 	study(){
-		console.log(`${this.name} is studying`);
+		console.log(`${this.getName} is studying`);
 		// return 
 	}
 }
@@ -27,17 +29,19 @@ class Student extends Person {
 class Teacher extends Person {
 
 constructor(name){
-		super(name);
+		super(name){
+	
+		}
 	}
 	teach(){
-		console.log(`${this.name} is teaching`);
+		console.log(`${this.getName} is teaching`);
 		// return
 	}
+
+	
 }
 
 // Do not change the code below this line
-
 window.Person = Person;
 window.Student = Student;
-// Student.study();
 window.Teacher = Teacher;
